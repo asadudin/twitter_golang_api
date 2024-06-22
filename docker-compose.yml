@@ -1,0 +1,13 @@
+services:
+  twitter-api:
+    build: ./
+    container_name: twitter-api
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - TWITTER_BEARER_TOKEN=${TWITTER_BEARER_TOKEN}
+    networks:
+      - synz-network
+
+networks:
+  synz-network:
+    external: true

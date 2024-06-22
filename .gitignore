@@ -1,0 +1,31 @@
+# Ignore .env file
+.env
+
+# Ignore Go build files
+/bin/
+/pkg/
+/cmd/
+
+# Ignore binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore test binary
+*.test
+
+# Ignore compiled object files
+*.o
+*.a
+*.out
+
+# Ignore logs
+*.log
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+.DS_Store
+*.swp
