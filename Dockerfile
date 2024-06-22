@@ -1,5 +1,8 @@
 FROM golang:1.18-alpine
 
+# Install git for go module downloads
+RUN apk update && apk add --no-cache git
+
 WORKDIR /app
 
 COPY go.mod ./
